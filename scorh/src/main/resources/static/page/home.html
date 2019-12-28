@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户主页</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="nav">
+    <a href="./update.html">更改密码</a>
+    <button class="" id="logout">退出登陆</button>
+</div>
+<h2>用户中心</h2><br>
+<div class="container">
+
+    <div class="box">
+        <div class="board">
+            <h3>用户</h3>
+            <form>
+                <div>
+                    <label><span class="label">用户名:</span>
+                        <input type="text" name="username" readonly/>
+                    </label>
+                </div>
+                <div>
+                    <label><span class="label">邮箱:</span>
+                        <input type="text" name="email" readonly/>
+                    </label>
+                </div>
+            </form>
+            <div>
+                <h4>已借图书:</h4>
+                <table id="reservation">
+                    <tr>
+                        <td>编号</td>
+                        <td>书名</td>
+                        <td>操作</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="board">
+            <h3>可借图书</h3>
+            <table id="noticeboard">
+                <tr>
+                    <td>编号</td>
+                    <td>书名</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/home.js"></script>
+</body>
+</html>
